@@ -81,57 +81,17 @@ Creates realistic comments based on analyzed discussions and blog summaries.
 
 ---
 ## 🏗️ System Architecture
+## 🏗️ System Architecture
 
 ```mermaid
 flowchart TD
-
-    A[👤 User enters keyword in Streamlit UI] --> B[🔍 SerpAPI Blog Search]
-
-    B --> C[🌐 Blog URLs Retrieved]
-
-    C --> D[📰 Blog Scraping Engine]
-    D --> D1[Requests]
-    D --> D2[BeautifulSoup]
-    D --> D3[Newspaper3k]
-
-    D --> E[📂 Data Collection]
-    E --> E1[Title]
-    E --> E2[Author]
-    E --> E3[Publish Date]
-    E --> E4[Article Content]
-    E --> E5[Comments]
-
-    E --> F[🧠 NLP Engine]
-
-    F --> F1[😊 VADER Sentiment Analysis]
-    F --> F2[🏷️ Hybrid LDA Topic Modeling]
-    F --> F3[🔑 TF-IDF Keyword Extraction]
-
-    E --> G[🤖 Ollama Local LLMs]
-
-    G --> G1[Phi-3]
-    G1 --> G11[Summary Generation]
-    G1 --> G12[Motive Classification]
-    G1 --> G13[Tone Detection]
-
-    G --> G2[Mistral]
-    G2 --> G21[Human-like Comment Generation]
-
-    F --> H[📊 Results Dataset]
-    G --> H
-
-    H --> I[📈 Streamlit Dashboard]
-
-    I --> I1[Blog Insights]
-    I --> I2[Sentiment Charts]
-    I --> I3[Motive Distribution]
-    I --> I4[Engagement Analysis]
-    I --> I5[Word Clouds]
-    I --> I6[AI Generated Comments]
-
-    I --> J[👤 User Interaction]
+    A[👤 User Input] --> B[🌐 Streamlit Interface]
+    B --> C[🔍 Blog Discovery<br/>(SerpAPI)]
+    C --> D[📰 Blog Scraping & Extraction]
+    D --> E[🧠 NLP + Local LLM Analysis]
+    E --> F[📊 Insights & Visualizations]
+    F --> G[📈 Interactive Dashboard]
 ```
-
 ---
 
 ## 🛠️ Tech Stack
