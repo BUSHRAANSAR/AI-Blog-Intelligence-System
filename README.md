@@ -240,13 +240,15 @@ Open the provided local URL in your browser.
 
 ## 🔄 Workflow
 
-1. Enter a keyword.
-2. Start the analysis pipeline.
-3. Blogs are discovered and scraped.
-4. NLP analysis is performed.
-5. AI-generated summaries and classifications are created.
-6. Visual analytics are displayed.
-7. Generate AI-powered comments.
+```mermaid
+flowchart TD
+    A["Enter a Keyword"] --> B["Start the Analysis Pipeline"]
+    B --> C["Blogs are Discovered and Scraped"]
+    C --> D["NLP Analysis is Performed"]
+    D --> E["AI-Generated Summaries and Classifications are Created"]
+    E --> F["Visual Analytics are Displayed"]
+    F --> G["Generate AI-Powered Comments"]
+```
 
 ---
 
