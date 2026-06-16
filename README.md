@@ -83,14 +83,25 @@ Creates realistic comments based on analyzed discussions and blog summaries.
 ## 🏗️ System Architecture
 ## 🏗️ System Architecture
 
+## 🏗️ System Architecture
+
 ```mermaid
 flowchart TD
-    A[👤 User Input] --> B[🌐 Streamlit Interface]
-    B --> C[🔍 Blog Discovery<br/>(SerpAPI)]
-    C --> D[📰 Blog Scraping & Extraction]
-    D --> E[🧠 NLP + Local LLM Analysis]
-    E --> F[📊 Insights & Visualizations]
-    F --> G[📈 Interactive Dashboard]
+    A["User Input"] --> B["Streamlit Interface"]
+    B --> C["Blog Discovery (SerpAPI)"]
+    C --> D["Blog Scraping & Extraction"]
+
+    D --> E["NLP Engine"]
+    E --> E1["Sentiment Analysis"]
+    E --> E2["Topic Modeling"]
+    E --> E3["TF-IDF Keywords"]
+
+    D --> F["Local LLMs"]
+    F --> F1["Phi-3: Summary, Motive & Tone"]
+    F --> F2["Mistral: Comment Generation"]
+
+    E --> G["Interactive Dashboard"]
+    F --> G
 ```
 ---
 
