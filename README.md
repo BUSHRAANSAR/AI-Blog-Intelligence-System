@@ -80,8 +80,6 @@ Visualizes results through:
 Creates realistic comments based on analyzed discussions and blog summaries.
 
 ---
-## 🏗️ System Architecture
-## 🏗️ System Architecture
 
 ## 🏗️ System Architecture
 
