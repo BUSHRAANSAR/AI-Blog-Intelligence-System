@@ -302,17 +302,6 @@ This project was developed for educational and research purposes. The generated 
 
 ---
 
-## 👥 Contributors
+## 👨‍💻 Author
 
-* Rimsha Farman
-* Add Contributor Name
-* Add Contributor Name
-* Add Contributor Name
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-Feel free to use, modify, and build upon this work while providing appropriate attribution.
+**Bushra Ansar**
